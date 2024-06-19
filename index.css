@@ -1,0 +1,55 @@
+
+
+#changes {
+    padding: 20px;
+    border-radius: 10px;
+    background: url('./asset/image/ppp.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+}
+html, body {
+    height: 100%;
+  }
+  .wrapper {
+    min-height: 100%;
+    /* Equal to height of footer */
+    margin-bottom: -50px; /* Height of footer */
+  }
+  .footer {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+  }
+  .section-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.blue-background {
+    background-color: rgb(174, 215, 247);
+    padding: 20px;
+    border-radius: 5px;
+}
+.icon-link {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+.navbar-brand, .nav-link {
+  font-size: 1.7em; 
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; 
+}
+.btn-download {
+  font-size: 1.5em; /* Increase font size */
+  padding: 0.75em 1.5em; /* Adjust padding */
+}
+
+.btn-download i {
+  font-size: 1.25em; /* Increase icon size */
+  margin-right: 0.5em; /* Space between icon and text */
+}
