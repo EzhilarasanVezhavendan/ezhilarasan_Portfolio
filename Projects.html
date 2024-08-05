@@ -10,14 +10,16 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <style>
-    html, body {
+    html,
+    body {
       height: 100%;
       margin: 0;
       display: flex;
       flex-direction: column;
     }
-c:\Users\ezhil\OneDrive\Desktop\pw\Portfolio-WebSite\Projects.html
-    .wrapper {
+    
+
+    c:\Users\ezhil\OneDrive\Desktop\pw\Portfolio-WebSite\Projects.html .wrapper {
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -28,7 +30,8 @@ c:\Users\ezhil\OneDrive\Desktop\pw\Portfolio-WebSite\Projects.html
     }
 
     footer {
-      background-color: #007bff; /* Bootstrap primary color */
+      background-color: #007bff;
+      /* Bootstrap primary color */
       color: #ffffff;
       padding: 20px 0;
     }
@@ -46,12 +49,14 @@ c:\Users\ezhil\OneDrive\Desktop\pw\Portfolio-WebSite\Projects.html
     footer a:hover {
       text-decoration: underline;
     }
-    .navbar-brand, .nav-link {
-      font-size: 1.7em; 
+
+    .navbar-brand,
+    .nav-link {
+      font-size: 1.7em;
     }
 
     .navbar-toggler-icon {
-      background-color: #ffffff; 
+      background-color: #ffffff;
     }
   </style>
 </head>
@@ -82,129 +87,179 @@ c:\Users\ezhil\OneDrive\Desktop\pw\Portfolio-WebSite\Projects.html
   <h1 class="text-center text-white display-1" style="background-color:#9975f3;">My Projects</h1>
   <div class="wrapper">
     <main>
-  <div class="row">
-    <div class="col-lg-6 mb-2">
-      <div class="card">
-        <div class="card-header bg-secondary text-white ">
-          Ats Resume tool To Filter The candidate by Their Resume Pdf File
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Project Description
-          </h5>
-          <div class="card-text">
-            <ul>
-              <li>Developed an ATS Resume Validation Tool using Python to authenticate resumes based on applied roles.
-              </li>
-              <li>Standardized and optimized code by implementing Exception handling techniques.</li>
-              <li>Managed candidate database including updating candidate information and defining application
-                restrictions.</li>
-              <li>Utilized PyPDF2 module for PDF processing.</li>
-            </ul>
-          </div>
-          <div class="text-center"><a href="https://github.com/EzhilarasanVezhavendan/Ats_Tool_Using_Python.git"
-              class="btn btn-primary">Source Link</a></div>
+      <div class="row">
+        <div class="col-lg-6 mb-2">
+          <div class="card">
+            <div class="card-header bg-secondary text-white ">
+              <center> Ats Resume tool To Filter The candidate by Their Resume Pdf File</center>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Project Description
+              </h5>
+              <div class="card-text">
+                <ul>
+                  <li><strong>ATS Scoring and Filtering</strong>: Calculated an ATS score based on keyword presence in
+                    the extracted text, and implemented logic to evaluate candidate eligibility for role application.
+                  </li>
+                  <li><strong>Application Processing</strong>: Automated candidate acceptance or rejection based on ATS
+                    score and application history, updating the database with results and handling re-application
+                    scenarios.</li>
+                  <li><strong>Automated Candidate Evaluation</strong>: Implemented an automated system for evaluating
+                    and processing candidate applications based on predefined criteria.</li>
+                  <li><strong>Enhanced System Reliability</strong>: Developed comprehensive error handling and
+                    validation mechanisms to ensure smooth execution and accurate data processing.</li>
+                  <li><strong>PDF Processing</strong>: Employed PyPDF2 to handle PDF text extraction and data cleaning,
+                    including mobile number and email address extraction using regex.</li>
+                  <li><strong>Database Operations</strong>: Used mysql.connector for robust database interactions,
+                    handling candidate data and role-related queries efficiently.</li>
+                  <li><strong>Date Handling</strong>: Managed date calculations to determine application eligibility
+                    based on the candidate's application history.</li>
+                  <li><strong>Efficient Data Extraction</strong>: Successfully automated the extraction of contact
+                    information and role-related keywords from PDF documents.</li>
+                </ul>
+              </div>
+              <div class="text-center"><a href="https://github.com/EzhilarasanVezhavendan/Ats_Tool_Using_Python.git"
+                  class="btn btn-primary">Source Link</a></div>
 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-2">
+          <div class="card">
+            <div class="card-header bg-secondary text-white ">
+              <center>SMS Trigger to alert the for Students by their Mobile Number Retrieved from the MySQL Database.
+              </center>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Project Description</h5>
+              <div class="card-text">
+                <ul>
+                  <li><strong>Database Integration</strong>: Established a connection to a MySQL database, executing
+                    queries to retrieve phone numbers for sending SMS.</li>
+                  <li><strong>API Integration</strong>: Utilized Vonage API to send SMS notifications, incorporating
+                    client credentials for secure communication.</li>
+                  <li><strong>Automated Messaging</strong>: Implemented logic to iterate through database results and
+                    send personalized SMS messages to each recipient.</li>
+                  <li><strong>Error Handling</strong>: Incorporated comprehensive error handling to manage issues with
+                    MySQL and Vonage API, ensuring robust application performance.</li>
+                  <li><strong>Error Management</strong>: Developed strategies to catch and handle exceptions related to
+                    MySQL errors, API issues, and general exceptions, maintaining application stability.</li>
+                  <li><strong>Efficient Data Retrieval</strong>: Successfully queried and processed data from the MySQL
+                    database to automate SMS notifications.</li>
+                  <li><strong>Reliable Messaging</strong>: Ensured successful message delivery by validating responses
+                    from Vonage API, addressing errors promptly.</li>
+                  <li><strong>Comprehensive Error Handling</strong>: Implemented robust error handling mechanisms to
+                    deal with potential issues, enhancing system reliability.</li>
+                  <li><strong>MySQL Connection</strong>: Used mysql.connector to connect to the MySQL server and execute
+                    SQL queries to fetch contact details.</li>
+                  <li><strong>Vonage API Utilization</strong>: Leveraged Vonage's Python library to handle SMS sending
+                    operations, ensuring reliable message delivery.</li>
+                </ul>
+
+
+
+              </div>
+              <div class="text-center"> <a
+                  href="https://github.com/EzhilarasanVezhavendan/SMS_Trigger_TO_Alert_Students.git"
+                  class="btn btn-primary">Source Link</a>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-6 mb-2">
-      <div class="card">
-        <div class="card-header bg-secondary text-white ">
-          SMS Trigger to alert the for Students by their Mobile Number Retrieved from the MySQL Database.
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Project Description</h5>
-          <div class="card-text">
-            <ul>
-              <li>Developed an alert system to notify students using their mobile numbers stored in the MYSQL database.
-              </li>
-              <li>Established connection between MYSQL Database and Python program using Mysql Connector.</li>
-              <li>Integrated with Vonage API for SMS notifications.</li>
-              <li>Applied Exception handling techniques for code optimization.</li>
-            </ul>
-          </div>
-          <div class="text-center"> <a
-              href="https://github.com/EzhilarasanVezhavendan/SMS_Trigger_TO_Alert_Students.git"
-              class="btn btn-primary">Source Link</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6 mb-2">
-      <div class="card">
-        <div class="card-header bg-secondary text-white ">
-          Rock Paper Scissor game
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Project Description</h5>
-          <div class="card-text">
-            <ul>
-              <li>Interactive User Interface:
+      <div class="row">
+        <div class="col-lg-6 mb-2">
+          <div class="card">
+            <div class="card-header bg-secondary text-white ">
+              <center> Rock Paper Scissor game</center>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Project Description</h5>
+              <div class="card-text">
+                <h3>Interactive User Interface:</h3>
                 <ul>
                   <li>Engage users with a visually appealing and intuitive interface.</li>
                   <li>Utilize Bootstrap for responsive design, ensuring seamless user experience across devices.</li>
-                </ul>
-              </li>
-              <li>Dynamic Game play:
-                <ul>
-                  <li>Enhance user experience with dynamic Game play elements.</li>
+                  <li>Enhance user experience with dynamic game play elements.</li>
                   <li>Implement a randomized computer choice feature for an unpredictable gaming experience.</li>
-                </ul>
-              </li>
-              <li>Scalable Codebase:
-                <ul>
                   <li>Develop a scalable and maintainable codebase for future enhancements.</li>
                   <li>Follow best practices in HTML, CSS, and JavaScript coding to ensure readability and extensibility.
                   </li>
-                </ul>
-              </li>
-              <li>Exception Handling:
-                <ul>
                   <li>Ensure robustness and reliability with comprehensive exception handling.</li>
-                  <li>Catch and handle errors gracefully to prevent disruptions in Game play.</li>
+                  <li>Catch and handle errors gracefully to prevent disruptions in game play.</li>
                 </ul>
-              </li>
-              <li>Feedback Mechanisms:
+
+                <h3>Feedback Mechanisms:</h3>
                 <ul>
                   <li>Provide instant feedback to users with victory messages and score updates.</li>
                   <li>Enhance user engagement through alerts for significant achievements, such as winning streaks.</li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="text-center">
-            <a href="https://github.com/EzhilarasanVezhavendan/Rock-Paper-scissors-Game.git"
-              class="btn btn-primary ">Source Link</a>
-          </div>
+
+              </div>
+              <div class="text-center">
+                <a href="https://github.com/EzhilarasanVezhavendan/Rock-Paper-scissors-Game.git"
+                  class="btn btn-primary ">Source Link</a>
+              </div>
 
 
+            </div>
+          </div>
         </div>
+        <div class="col-lg-6 mb-2">
+          <div class="card">
+            <div class="card-header bg-secondary text-white ">
+              <center>Transaction Manager</center>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Project Description</h5>
+              <div class="card-text">
+                <ul>
+                  <li><strong>Transactional Rollback</strong>: Implemented advanced rollback functionality to revert
+                    changes on transaction failures, ensuring database consistency.</li>
+                  <li><strong>Secure User Authentication</strong>: Utilized JDBC for MySQL connection with secure login
+                    via account numbers and PINs.</li>
+                  <li><strong>Dynamic Fund Transfer</strong>: Enabled real-time credit and debit operations for seamless
+                    fund transfers between accounts.</li>
+                  <li><strong>User Confirmation Workflow</strong>: Integrated a mechanism for beneficiaries to accept or
+                    reject incoming transfers, enhancing transaction verification.</li>
+                </ul>
+
+
+
+              </div>
+              <div class="text-center"> <a href="https://github.com/EzhilarasanVezhavendan/BankTransactionManager"
+                  class="btn btn-primary">Source Link</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
       </div>
-    </div>
-  </div>
 
-</main>
-<footer class=" bg-primary text-white py-4">
-  <div class="container text-center">
-    <h3>Contact Me</h3>
-    <p>Email: ezhilarasanvezhavendan@gmail.com</p>
-    <p> Villupuram ,Tamilnadu ,India</p>
-    <p>
-      <a href="https://www.linkedin.com/in/ezhilarasan-vezhavendan-b1886024a/" target="_blank" class="text-white mx-2">
-        <i class="fab fa-linkedin fa-lg"></i>
-        LinkedIn
+    </main>
+    <footer class=" bg-primary text-white py-4">
+      <div class="container text-center">
+        <h3>Contact Me</h3>
+        <p>Email: ezhilarasanvezhavendan@gmail.com</p>
+        <p> Villupuram ,Tamilnadu ,India</p>
+        <p>
+          <a href="https://www.linkedin.com/in/ezhilarasan-vezhavendan-b1886024a/" target="_blank"
+            class="text-white mx-2">
+            <i class="fab fa-linkedin fa-lg"></i>
+            LinkedIn
 
-      </a>
-      <a href="https://github.com/EzhilarasanVezhavendan" target="_blank" class="text-white mx-2">
-        <i class="fab fa-github fa-lg"></i>GitHub</a>
-    </p>
+          </a>
+          <a href="https://github.com/EzhilarasanVezhavendan" target="_blank" class="text-white mx-2">
+            <i class="fab fa-github fa-lg"></i>GitHub</a>
+        </p>
+      </div>
+    </footer>
   </div>
-</footer>
-</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>
