@@ -9,56 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-    }
-    
-
-    c:\Users\ezhil\OneDrive\Desktop\pw\Portfolio-WebSite\Projects.html .wrapper {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1;
-    }
-
-    footer {
-      background-color: #007bff;
-      /* Bootstrap primary color */
-      color: #ffffff;
-      padding: 20px 0;
-    }
-
-    footer .container {
-      text-align: center;
-    }
-
-    footer a {
-      color: #ffffff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    .navbar-brand,
-    .nav-link {
-      font-size: 1.7em;
-    }
-
-    .navbar-toggler-icon {
-      background-color: #ffffff;
-    }
-  </style>
+<link rel="stylesheet" href="./project.css">
 </head>
 
 <body>
@@ -90,7 +41,7 @@
       <div class="row">
         <div class="col-lg-6 mb-2">
           <div class="card">
-            <div class="card-header bg-secondary text-white ">
+            <div class="card-header bg-dark text-white ">
               <center> Ats Resume tool To Filter The candidate by Their Resume Pdf File</center>
             </div>
             <div class="card-body">
@@ -98,26 +49,17 @@
               </h5>
               <div class="card-text">
                 <ul>
-                  <li><strong>ATS Scoring and Filtering</strong>: Calculated an ATS score based on keyword presence in
-                    the extracted text, and implemented logic to evaluate candidate eligibility for role application.
-                  </li>
-                  <li><strong>Application Processing</strong>: Automated candidate acceptance or rejection based on ATS
-                    score and application history, updating the database with results and handling re-application
-                    scenarios.</li>
-                  <li><strong>Automated Candidate Evaluation</strong>: Implemented an automated system for evaluating
-                    and processing candidate applications based on predefined criteria.</li>
-                  <li><strong>Enhanced System Reliability</strong>: Developed comprehensive error handling and
-                    validation mechanisms to ensure smooth execution and accurate data processing.</li>
-                  <li><strong>PDF Processing</strong>: Employed PyPDF2 to handle PDF text extraction and data cleaning,
-                    including mobile number and email address extraction using regex.</li>
-                  <li><strong>Database Operations</strong>: Used mysql.connector for robust database interactions,
-                    handling candidate data and role-related queries efficiently.</li>
-                  <li><strong>Date Handling</strong>: Managed date calculations to determine application eligibility
-                    based on the candidate's application history.</li>
-                  <li><strong>Efficient Data Extraction</strong>: Successfully automated the extraction of contact
-                    information and role-related keywords from PDF documents.</li>
+                  <li><strong>ATS Scoring and Filtering</strong>: Implemented logic to calculate an ATS score based on keyword presence in extracted text, evaluating candidate eligibility for role applications.</li>
+                  <li><strong>Automated Candidate Processing</strong>: Developed a system for automated acceptance or rejection of candidates based on ATS scores and application history, updating the database accordingly.</li>
+                  <li><strong>PDF Text Extraction and Data Cleaning</strong>: Utilized PyPDF2 for efficient PDF text extraction and data cleaning, including regex-based extraction of mobile numbers and email addresses.</li>
+                  <li><strong>Robust Database Operations</strong>: Used mysql.connector for reliable database interactions, efficiently managing candidate data and role-related queries.</li>
+                  <li><strong>Error Handling and System Reliability</strong>: Designed comprehensive error handling and validation mechanisms to ensure smooth execution and accurate data processing, enhancing system reliability.</li>
+                  <li><strong>Efficient Data Extraction</strong>: Automated the extraction of contact information and role-related keywords from PDF documents, streamlining the evaluation process.</li>
                 </ul>
               </div>
+              
+              
+              
               <div class="text-center"><a href="https://github.com/EzhilarasanVezhavendan/Ats_Tool_Using_Python.git"
                   class="btn btn-primary">Source Link</a></div>
 
@@ -126,7 +68,7 @@
         </div>
         <div class="col-lg-6 mb-2">
           <div class="card">
-            <div class="card-header bg-secondary text-white ">
+            <div class="card-header bg-dark text-white ">
               <center>SMS Trigger to alert the for Students by their Mobile Number Retrieved from the MySQL Database.
               </center>
             </div>
@@ -134,31 +76,16 @@
               <h5 class="card-title">Project Description</h5>
               <div class="card-text">
                 <ul>
-                  <li><strong>Database Integration</strong>: Established a connection to a MySQL database, executing
-                    queries to retrieve phone numbers for sending SMS.</li>
-                  <li><strong>API Integration</strong>: Utilized Vonage API to send SMS notifications, incorporating
-                    client credentials for secure communication.</li>
-                  <li><strong>Automated Messaging</strong>: Implemented logic to iterate through database results and
-                    send personalized SMS messages to each recipient.</li>
-                  <li><strong>Error Handling</strong>: Incorporated comprehensive error handling to manage issues with
-                    MySQL and Vonage API, ensuring robust application performance.</li>
-                  <li><strong>Error Management</strong>: Developed strategies to catch and handle exceptions related to
-                    MySQL errors, API issues, and general exceptions, maintaining application stability.</li>
-                  <li><strong>Efficient Data Retrieval</strong>: Successfully queried and processed data from the MySQL
-                    database to automate SMS notifications.</li>
-                  <li><strong>Reliable Messaging</strong>: Ensured successful message delivery by validating responses
-                    from Vonage API, addressing errors promptly.</li>
-                  <li><strong>Comprehensive Error Handling</strong>: Implemented robust error handling mechanisms to
-                    deal with potential issues, enhancing system reliability.</li>
-                  <li><strong>MySQL Connection</strong>: Used mysql.connector to connect to the MySQL server and execute
-                    SQL queries to fetch contact details.</li>
-                  <li><strong>Vonage API Utilization</strong>: Leveraged Vonage's Python library to handle SMS sending
-                    operations, ensuring reliable message delivery.</li>
+                  <li><strong>Database Integration</strong>: Established a connection to a MySQL database using mysql.connector, efficiently retrieving and processing contact details for SMS notifications.</li>
+                  <li><strong>API Integration and Messaging</strong>: Utilized the Vonage API to send personalized SMS messages, incorporating secure client credentials and ensuring reliable communication.</li>
+                  <li><strong>Automated Messaging Logic</strong>: Implemented automation to iterate through database results and send tailored SMS notifications to each recipient.</li>
+                  <li><strong>Error Handling and Stability</strong>: Developed comprehensive error handling strategies to manage MySQL and API-related issues, ensuring robust application performance and stability.</li>
+                  <li><strong>Reliable SMS Delivery</strong>: Validated Vonage API responses to ensure successful message delivery, promptly addressing any errors encountered.</li>
+                  <li><strong>Efficient Data Retrieval</strong>: Executed SQL queries to efficiently fetch and process data from the MySQL database, streamlining the SMS notification process.</li>
                 </ul>
-
-
-
               </div>
+              
+              
               <div class="text-center"> <a
                   href="https://github.com/EzhilarasanVezhavendan/SMS_Trigger_TO_Alert_Students.git"
                   class="btn btn-primary">Source Link</a>
@@ -171,32 +98,21 @@
       <div class="row">
         <div class="col-lg-6 mb-2">
           <div class="card">
-            <div class="card-header bg-secondary text-white ">
+            <div class="card-header bg-dark text-white ">
               <center> Rock Paper Scissor game</center>
             </div>
             <div class="card-body">
               <h5 class="card-title">Project Description</h5>
               <div class="card-text">
-                <h3>Interactive User Interface:</h3>
                 <ul>
-                  <li>Engage users with a visually appealing and intuitive interface.</li>
-                  <li>Utilize Bootstrap for responsive design, ensuring seamless user experience across devices.</li>
-                  <li>Enhance user experience with dynamic game play elements.</li>
-                  <li>Implement a randomized computer choice feature for an unpredictable gaming experience.</li>
-                  <li>Develop a scalable and maintainable codebase for future enhancements.</li>
-                  <li>Follow best practices in HTML, CSS, and JavaScript coding to ensure readability and extensibility.
-                  </li>
-                  <li>Ensure robustness and reliability with comprehensive exception handling.</li>
-                  <li>Catch and handle errors gracefully to prevent disruptions in game play.</li>
+                  <li><strong>Interactive User Interface</strong>: Designed a visually appealing and intuitive interface using Bootstrap for a responsive design, ensuring a seamless user experience across various devices.</li>
+                  <li><strong>Dynamic Game Play Elements</strong>: Enhanced the gaming experience with dynamic gameplay features and a randomized computer choice for an unpredictable and engaging experience.</li>
+                  <li><strong>Scalable and Maintainable Codebase</strong>: Developed a scalable and maintainable codebase, adhering to best practices in HTML, CSS, and JavaScript to ensure readability and extensibility for future enhancements.</li>
+                  <li><strong>Robust Error Handling</strong>: Implemented comprehensive exception handling to ensure robustness and reliability, catching and managing errors gracefully to prevent disruptions in gameplay.</li>
+                  <li><strong>Instant Feedback Mechanisms</strong>: Provided users with immediate feedback through victory messages and score updates, and incorporated alerts for significant achievements like winning streaks to enhance engagement.</li>
                 </ul>
-
-                <h3>Feedback Mechanisms:</h3>
-                <ul>
-                  <li>Provide instant feedback to users with victory messages and score updates.</li>
-                  <li>Enhance user engagement through alerts for significant achievements, such as winning streaks.</li>
-                </ul>
-
               </div>
+              
               <div class="text-center">
                 <a href="https://github.com/EzhilarasanVezhavendan/Rock-Paper-scissors-Game.git"
                   class="btn btn-primary ">Source Link</a>
@@ -208,26 +124,19 @@
         </div>
         <div class="col-lg-6 mb-2">
           <div class="card">
-            <div class="card-header bg-secondary text-white ">
+            <div class="card-header bg-dark text-white ">
               <center>Transaction Manager</center>
             </div>
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title">Project Description</h5>
               <div class="card-text">
                 <ul>
-                  <li><strong>Transactional Rollback</strong>: Implemented advanced rollback functionality to revert
-                    changes on transaction failures, ensuring database consistency.</li>
-                    <li><strong>Enhanced security by implementing MD5 hashing for password encryption</strong></li>
-                  <li><strong>Secure User Authentication</strong>: Utilized JDBC for MySQL connection with secure login
-                    via account numbers and PINs.</li>
-                  <li><strong>Dynamic Fund Transfer</strong>: Enabled real-time credit and debit operations for seamless
-                    fund transfers between accounts.</li>
-                  <li><strong>User Confirmation Workflow</strong>: Integrated a mechanism for beneficiaries to accept or
-                    reject incoming transfers, enhancing transaction verification.</li>
+                  <li><strong>Advanced Transaction Management</strong>: Implemented sophisticated rollback functionality and SQL transaction control (including savepoints) to ensure database consistency during complex banking operations.</li>
+                  <li><strong>Secure User Authentication</strong>: Enhanced security by integrating MD5 hashing for password encryption and utilizing JDBC for secure MySQL connections, supporting login via account numbers and PINs.</li>
+                  <li><strong>Dynamic Fund Transfers</strong>: Enabled real-time credit and debit operations for seamless and secure fund transfers between accounts, with a user confirmation workflow for added verification.</li>
+                  <li><strong>JDBC and SQL Integration</strong>: Leveraged JDBC for reliable MySQL connections and efficient data handling, showcasing strong database integration skills.</li>
+                  <li><strong>Comprehensive Error Handling</strong>: Developed robust error handling strategies to manage SQL exceptions, invalid account details, and connectivity issues, ensuring smooth operation of the banking application.</li>
                 </ul>
-
-
-
               </div>
               <div class="text-center"> <a href="https://github.com/EzhilarasanVezhavendan/BankTransactionManager"
                   class="btn btn-primary">Source Link</a>
