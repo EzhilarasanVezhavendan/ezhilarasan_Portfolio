@@ -1,14 +1,6 @@
 
 
-#changes {
-    padding: 20px;
-    border-radius: 10px;
-    background: url('./asset/image/ppp.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    font-size: 40px;
-}
+
 
 html, body {
     height: 100%;
