@@ -53,3 +53,46 @@ html, body {
   font-size: 1.25em; /* Increase icon size */
   margin-right: 0.5em; /* Space between icon and text */
 }
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.linkedin-button {
+  background-color: #0077b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.linkedin-button svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.linkedin-button:hover {
+  background-color: #005582;
+  color: #fff;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
