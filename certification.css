@@ -1,0 +1,46 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #007bff;
+    /* Bootstrap primary color */
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.navbar-brand, .nav-link {
+font-size: 1.7em; 
+}
+
+.navbar-toggler-icon {
+background-color: #ffffff; 
+}

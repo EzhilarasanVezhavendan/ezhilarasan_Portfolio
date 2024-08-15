@@ -7,7 +7,7 @@ body {
 }
 
 
-c:\Users\ezhil\OneDrive\Desktop\pw\Portfolio-WebSite\Projects.html .wrapper {
+html .wrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
