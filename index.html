@@ -147,20 +147,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
-<script>
-  const words = ['Full Stack', 'Front End', 'Back End', 'Java', 'JavaScript',
-    'Python', 'React', 'Node.js'];
-  let index = 0;
-
-  function changeWord() {
-    const wordElement = document.getElementById('dynamic-word');
-    wordElement.textContent = words[index];
-    index = (index + 1) % words.length;
-  }
-
-  setInterval(changeWord, 2000);
-  changeWord();
-</script>
+<script src="./index.js"></script>
 
 
 </html>
