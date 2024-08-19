@@ -81,3 +81,32 @@ html, body {
   transform: scale(1.05);
   text-decoration: none;
 }
+
+.flex-fill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.linkedin-button {
+  margin-top: auto;
+}
+
+.btn-success {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #28a745; 
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
