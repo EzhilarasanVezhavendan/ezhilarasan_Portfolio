@@ -35,10 +35,37 @@ html, body {
   footer a:hover {
     text-decoration: underline;
   }
-  .navbar-brand, .nav-link {
-    font-size: 1.7em; 
-  }
+  .navbar-brand,
+.nav-link {
+  font-size: 1.2em;
+  color: white !important;   /* normal state */
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  display: inline-block;
+}
 
-  .navbar-toggler-icon {
-    background-color: #ffffff; 
-  }
+/* On hover -> text becomes gold */
+.navbar-brand:hover,
+.nav-link:hover {
+  color: gold !important;
+  transform: scale(1.05);
+}
+
+/* Animated underline effect */
+.navbar-brand::after,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: gold;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand:hover::after,
+.nav-link:hover::after {
+  width: 100%;
+}

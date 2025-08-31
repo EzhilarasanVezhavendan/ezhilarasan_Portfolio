@@ -2,255 +2,308 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EzhilarasanVezhavendan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./certification.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezhilarasan Vezhavendan - Certifications</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./certification.css">
 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(to right, #0d6efd, #084298);
+    }
+
+    .navbar .nav-link {
+      transition: color 0.3s ease;
+    }
+
+    .navbar-brand,
+.nav-link {
+  font-size: 1.2em;
+  color: white !important;   /* normal state */
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  display: inline-block;
+}
+
+/* On hover -> text becomes gold */
+.navbar-brand:hover,
+.nav-link:hover {
+  color: gold !important;
+  transform: scale(1.05);
+}
+
+/* Animated underline effect */
+.navbar-brand::after,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: gold;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand:hover::after,
+.nav-link:hover::after {
+  width: 100%;
+}
+
+    /* Accordion button style */
+    .accordion-button {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .accordion-button:hover {
+      background-color: #084298 !important;
+      color: #ffc107 !important;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(to right, #0d6efd, #084298);
+      color: white;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid bg-dark p-3">
-            <a class="navbar-brand  text-white" href="./index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon  bg-white"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" href="./Projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" href="#">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active  text-white" aria-current="page" href="./skill.html">MySkills</a>
-                    </li>
-                </ul>
+  <!-- ✅ Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-white" href="./index.html">Ezhilarasan Vezhavendan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./Projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./Certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./skill.html">My Skills</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Certifications Content -->
+  <div class="wrapper container my-5">
+    <main>
+      <div class="row">
+
+        <!-- Advanced Java -->
+        <div class="col-md-4 p-3">
+          <div class="accordion accordion-flush" id="accordionFlush1">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center mx-3">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#Advanced_Java" aria-expanded="false"
+                  aria-controls="Advanced_Java">
+                  Advanced Java
+                </button>
+              </h2>
             </div>
+          </div>
+          <div id="Advanced_Java" class="accordion-collapse collapse" data-bs-parent="#accordionFlush1">
+            <div class="accordion-body mx-3">
+              <img src="./asset/image/Advanced_Java.png" class="img-fluid rounded mb-3" alt="Advanced Java">
+              <b>Learned Core Java concepts and their execution flow internally using real-time projects.</b>
+            </div>
+          </div>
         </div>
-    </nav>
-    <!-- <h1 class="text-center text-white display-1" style="background-color:#9975f3;">My Certifications</h1> -->
-    <div class="wrapper">
-        <main>
-            <div class="row">
-                <div class="col-md-4 p-3">
 
-                    <div class="accordion accordion-flush " id="accordionFlushExample">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header text-center mx-3 ">
-                                <button class="accordion-button collapsed bg-secondary text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#Advanced_Java" aria-expanded="false"
-                                    aria-controls="Advanced_Java">
-                                    Advanced Java
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <div id="Advanced_Java" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body mx-3">
-                            <div class="d-flex ">
-                                <img src="./asset/image/Advanced_Java.png" class="img-fluid" width="400" alt="">
-                            </div><b>learned Core Java concepts and it's</b>
-                            <code> execution flow internally using real time projects. </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 p-3">
-
-                    <div class="accordion accordion-flush " id="accordionFlushExample1">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header text-center mx-3 ">
-                                <button class="accordion-button collapsed bg-secondary text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#JAVA" aria-expanded="false"
-                                    aria-controls="JAVA">
-                                    JAVA & JDBC
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <div id="JAVA" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-                        <div class="accordion-body mx-3">
-                            <div class="d-flex ">
-                                <img src="./asset/image/java&jdbc.png" class="img-fluid" width="400" alt="">
-                            </div><b>learned Core Java and JDBC
-                            </b><code>Implemented Projects on java to Mysql connection</code>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-3">
-
-                    <div class="accordion accordion-flush " id="accordionFlushExample">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header text-center mx-3 ">
-                                <button class="accordion-button collapsed bg-secondary text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#JAVASCRIPT" aria-expanded="false"
-                                    aria-controls="JAVASCRIPT">
-                                    JAVASCRIPT
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <div id="JAVASCRIPT" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body mx-3">
-                            <div class="d-flex ">
-                                <img src="./asset/image/js.png" class="img-fluid" width="400" alt="">
-                            </div><b>Learned JAVASCRIPT from it's Basics and its step by step Working Progress</b>
-                            <code>Learned and  The Advanced JAVASCRIPT Concepts </code>
-                        </div>
-                    </div>
-                </div>
-
+        <!-- JAVA & JDBC -->
+        <div class="col-md-4 p-3">
+          <div class="accordion accordion-flush" id="accordionFlush2">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center mx-3">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#JAVA" aria-expanded="false" aria-controls="JAVA">
+                  JAVA & JDBC
+                </button>
+              </h2>
             </div>
-            <div class="row">
-                <div class="col-md-4 p-3">
-
-                    <div class="accordion accordion-flush " id="accordionFlushExample">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header text-center mx-3 ">
-                                <button class="accordion-button collapsed bg-secondary text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#MYSQL" aria-expanded="false"
-                                    aria-controls="MYSQL">
-                                    MYSQL
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <div id="MYSQL" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body mx-3">
-                            <div class="d-flex ">
-                                <img src="./asset/image/mysql.png" class="img-fluid" width="400" alt="">
-                            </div><b>Learned The Mysql With all Concepts Deeply</b>
-                            <code>Practiced Advanced Query </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 p-3">
-
-                    <div class="accordion accordion-flush " id="accordionFlushExample22">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header text-center mx-3 ">
-                                <button class="accordion-button collapsed bg-secondary text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#Networking" aria-expanded="false"
-                                    aria-controls="Networking">
-                                    Networking
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <div id="Networking" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample22">
-                        <div class="accordion-body mx-3">
-                            <div class="d-flex ">
-                                <img src="./asset/image/Networking.png" class="img-fluid" width="400" alt="">
-                            </div><b>Learned Networking Concepts From Basis To How Interaction Between Two System Takes
-                                Places</b>
-                            <code>Learned "HTTP HTTPS TCP IP AND ALL OTHER NETWORKING PROTOCOLS".</code>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-3">
-
-                    <div class="accordion accordion-flush " id="accordionFlushExample">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header text-center mx-3 ">
-                                <button class="accordion-button collapsed bg-secondary text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#BOOTSTRAP" aria-expanded="false"
-                                    aria-controls="BOOTSTRAP">
-                                    BOOTSTRAP
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <div id="BOOTSTRAP" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body mx-3">
-                            <div class="d-flex ">
-                                <img src="./asset/image/bootstrap.png" class="img-fluid" width="400" alt="">
-                            </div><b>Learned BOOTSTRAP FrameWork With Deeper Knowledge and</b>
-                            <code>Designed Many Responsive Websites</code>
-                        </div>
-                    </div>
-                </div>
-
-
+          </div>
+          <div id="JAVA" class="accordion-collapse collapse" data-bs-parent="#accordionFlush2">
+            <div class="accordion-body mx-3">
+              <img src="./asset/image/java&jdbc.png" class="img-fluid rounded mb-3" alt="Java & JDBC">
+              <b>Learned Core Java and JDBC.</b>
+              <code>Implemented projects on Java-to-MySQL connection.</code>
             </div>
-            <div class="row">
+          </div>
+        </div>
 
-                <div class="col-md-4 p-3">
-
-                    <div class="accordion accordion-flush " id="accordionFlushExample">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header text-center mx-3 ">
-                                <button class="accordion-button collapsed bg-secondary text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#HTML" aria-expanded="false"
-                                    aria-controls="HTML">
-                                    HTML & CSS
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <div id="HTML" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body mx-3">
-                            <div class="d-flex ">
-                                <img src="./asset/image/HTML&CSS.png" class="img-fluid" width="400" alt="">
-                            </div> <b>Learned how To Make an Structure with an Html And Design With The CSS</b>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 p-3">
-
-                    <div class="accordion accordion-flush " id="accordionFlushExample11">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header text-center mx-3 ">
-                                <button class="accordion-button collapsed bg-secondary text-white" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#Ethical_Hacking" aria-expanded="false"
-                                    aria-controls="Ethical_Hacking">
-                                    Ethical_Hacking
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <div id="Ethical_Hacking" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample11">
-                        <div class="accordion-body mx-3">
-                            <div class="d-flex ">
-                                <img src="./asset/image/Ethical_Hacking.png" class="img-fluid" width="400" alt="">
-                            </div><b>Learned How Hacking Takes places On a Ordinary Person And how cyber Attacks Takes
-                                Places</b>
-                            <code>Learned keep My Data in a More Responsible ANd Protective Ways</code>
-                        </div>
-                    </div>
-                </div>
+        <!-- JavaScript -->
+        <div class="col-md-4 p-3">
+          <div class="accordion accordion-flush" id="accordionFlush3">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center mx-3">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#JAVASCRIPT" aria-expanded="false" aria-controls="JAVASCRIPT">
+                  JavaScript
+                </button>
+              </h2>
             </div>
-        </main>
+          </div>
+          <div id="JAVASCRIPT" class="accordion-collapse collapse" data-bs-parent="#accordionFlush3">
+            <div class="accordion-body mx-3">
+              <img src="./asset/image/js.png" class="img-fluid rounded mb-3" alt="JavaScript">
+              <b>Learned JavaScript basics and advanced concepts step by step.</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- MySQL -->
+        <div class="col-md-4 p-3">
+          <div class="accordion accordion-flush" id="accordionFlush4">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center mx-3">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#MYSQL" aria-expanded="false" aria-controls="MYSQL">
+                  MySQL
+                </button>
+              </h2>
+            </div>
+          </div>
+          <div id="MYSQL" class="accordion-collapse collapse" data-bs-parent="#accordionFlush4">
+            <div class="accordion-body mx-3">
+              <img src="./asset/image/mysql.png" class="img-fluid rounded mb-3" alt="MySQL">
+              <b>Learned SQL queries and database management with MySQL.</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="col-md-4 p-3">
+          <div class="accordion accordion-flush" id="accordionFlush5">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center mx-3">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#Networking" aria-expanded="false" aria-controls="Networking">
+                  Networking
+                </button>
+              </h2>
+            </div>
+          </div>
+          <div id="Networking" class="accordion-collapse collapse" data-bs-parent="#accordionFlush5">
+            <div class="accordion-body mx-3">
+              <img src="./asset/image/networking.png" class="img-fluid rounded mb-3" alt="Networking">
+              <b>Covered OSI model, TCP/IP, and practical networking concepts.</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="col-md-4 p-3">
+          <div class="accordion accordion-flush" id="accordionFlush6">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center mx-3">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#Bootstrap" aria-expanded="false" aria-controls="Bootstrap">
+                  Bootstrap
+                </button>
+              </h2>
+            </div>
+          </div>
+          <div id="Bootstrap" class="accordion-collapse collapse" data-bs-parent="#accordionFlush6">
+            <div class="accordion-body mx-3">
+              <img src="./asset/image/bootstrap.png" class="img-fluid rounded mb-3" alt="Bootstrap">
+              <b>Learned Bootstrap framework to create responsive, modern websites.</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- HTML -->
+        <div class="col-md-4 p-3">
+          <div class="accordion accordion-flush" id="accordionFlush7">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center mx-3">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#HTML" aria-expanded="false" aria-controls="HTML">
+                  HTML
+                </button>
+              </h2>
+            </div>
+          </div>
+          <div id="HTML" class="accordion-collapse collapse" data-bs-parent="#accordionFlush7">
+            <div class="accordion-body mx-3">
+              <img src="./asset/image/html.png" class="img-fluid rounded mb-3" alt="HTML">
+              <b>Learned HTML fundamentals and built structured web pages.</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ethical Hacking -->
+        <div class="col-md-4 p-3">
+          <div class="accordion accordion-flush" id="accordionFlush8">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center mx-3">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#EthicalHacking" aria-expanded="false"
+                  aria-controls="EthicalHacking">
+                  Ethical Hacking
+                </button>
+              </h2>
+            </div>
+          </div>
+          <div id="EthicalHacking" class="accordion-collapse collapse" data-bs-parent="#accordionFlush8">
+            <div class="accordion-body mx-3">
+              <img src="./asset/image/ethical_hacking.png" class="img-fluid rounded mb-3" alt="Ethical Hacking">
+              <b>Studied cybersecurity concepts and penetration testing basics.</b>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+ <footer class="footer bg-dark text-white py-4">
+  <div class="container text-center">
+    <h4 class="mb-3">Let’s Connect</h4>
+    <p class="mb-1">Email: <a href="mailto:ezhilarasanvezhavendan@gmail.com" class="text-info">ezhilarasanvezhavendan@gmail.com</a></p>
+    <p class="mb-3">Villupuram, Tamil Nadu, India</p>
+    <div class="d-flex justify-content-center gap-3 mb-3">
+      <a href="https://www.linkedin.com/in/ezhilarasan-vezhavendan-b1886024a/" target="_blank" class="text-white">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://github.com/EzhilarasanVezhavendan" target="_blank" class="text-white">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
     </div>
-</body>
-<footer class=" bg-primary text-white py-4">
-    <div class="container text-center">
-        <h3>Contact Me</h3>
-        <p>Email: ezhilarasanvezhavendan@gmail.com</p>
-        <p> Villupuram ,Tamilnadu ,India</p>
-        <p>
-            <a href="https://www.linkedin.com/in/ezhilarasan-vezhavendan-b1886024a/" target="_blank"
-                class="text-white mx-2">
-                <i class="fab fa-linkedin fa-lg"></i>
-                LinkedIn
-
-            </a>
-            <a href="https://github.com/EzhilarasanVezhavendan" target="_blank" class="text-white mx-2">
-                <i class="fab fa-github fa-lg"></i>GitHub</a>
-        </p>
-    </div>
+    <p class="mt-3 mb-0">© 2025 Ezhilarasan Vezhavendan. All rights reserved.</p>
+  </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+</body>
 
 </html>
