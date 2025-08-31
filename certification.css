@@ -1,74 +1,71 @@
 
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.wrapper {
+  .wrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
-}
+  }
 
-main {
+  main {
     flex: 1;
-}
+  }
 
-footer {
-    background-color: #007bff;
-    /* Bootstrap primary color */
+  footer {
+    background-color: #007bff; 
     color: #ffffff;
     padding: 20px 0;
-}
+  }
 
-footer .container {
+  footer .container {
     text-align: center;
-}
+  }
 
-footer a {
+  footer a {
     color: #ffffff;
     margin: 0 10px;
     text-decoration: none;
-}
+  }
 
-footer a:hover {
+  footer a:hover {
     text-decoration: underline;
-}
-.navbar-brand, .nav-link {
-font-size: 1.7em; 
+  }
+  .navbar-brand,
+.nav-link {
+  font-size: 1.2em;
+  color: white !important;   /* normal state */
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  display: inline-block;
 }
 
-.navbar-toggler-icon {
-background-color: #ffffff; 
+/* On hover -> text becomes gold */
+.navbar-brand:hover,
+.nav-link:hover {
+  color: gold !important;
+  transform: scale(1.05);
 }
-.accordion-button {
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .accordion-button:hover {
-    background-color: #5a6268; /* Slightly darker shade of the button's background */
-    color: #f8f9fa; /* Lightens the text color */
-  }
-  
-  .accordion-body img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .accordion-body img:hover {
-    transform: scale(1.05); /* Slightly enlarges the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
-  }
-  /* Apply transitions to the accordion item for smooth hover effects */
-.accordion-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* On hover, slightly lift the accordion item and add a shadow */
-  .accordion-item:hover {
-    transform: translateY(-3px); /* Lifts the accordion item up slightly */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-  }
-  
+
+/* Animated underline effect */
+.navbar-brand::after,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: gold;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand:hover::after,
+.nav-link:hover::after {
+  width: 100%;
+}
